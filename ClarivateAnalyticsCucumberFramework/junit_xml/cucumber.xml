@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.501228">
+<testcase classname="Google Search Test" name="Validate Google Search result for Clarivate Analytics Input Test" time="21.501228">
+<system-out><![CDATA[Given user opens browser....................................................passed
+When user is on google home page............................................passed
+Then user enters "Clarivate Analytics" search box...........................passed
+Then "clarivate.com" should be the first searched result....................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

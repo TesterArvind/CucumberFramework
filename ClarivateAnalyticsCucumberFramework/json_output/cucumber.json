@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate Google Search result for Clarivate Analytics Input Test",
+        "description": "",
+        "id": "google-search-test;validate-google-search-result-for-clarivate-analytics-input-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14267864000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens browser",
+            "match": {
+              "location": "GoogleSearchSteps.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74302600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on google home page",
+            "match": {
+              "location": "GoogleSearchSteps.user_is_on_google_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2942050500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters \"Clarivate Analytics\" search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Clarivate Analytics",
+                  "offset": 13
+                }
+              ],
+              "location": "GoogleSearchSteps.user_enters_search_box(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 85474700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"clarivate.com\" should be the first searched result",
+            "match": {
+              "arguments": [
+                {
+                  "val": "clarivate.com",
+                  "offset": 1
+                }
+              ],
+              "location": "GoogleSearchSteps.should_be_the_first_search_result(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4131536300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close browser",
+            "match": {
+              "location": "GoogleSearchSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Google Search Test",
+    "description": "",
+    "id": "google-search-test",
+    "keyword": "Feature",
+    "uri": "C:/Users/Admin/workspace/ClarivateAnalyticsCucumberFramework/src/main/java/com/qa/features/search.feature"
+  }
+]
