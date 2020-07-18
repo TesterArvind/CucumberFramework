@@ -54,6 +54,5 @@ public class TestBase {
 		DesktopOptions option = new DesktopOptions();
 		option.setApplicationPath("c:\\Windows\\System32\\calc.exe");
 		winiumDriver = new WiniumDriver(new URL("http://localhost:9999"),option);	
-
 	}	
 }

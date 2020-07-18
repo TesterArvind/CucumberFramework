@@ -2,7 +2,7 @@ package com.qa.stepDefinitions;
 
 import org.apache.logging.log4j.LogManager;
 
-import com.qa.pages.CalculatorSquareRoot;
+import com.desktop.application.CalculatorSquareRoot;
 import com.qa.util.TestBase;
 
 import cucumber.api.java.en.Given;

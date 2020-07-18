@@ -1,4 +1,4 @@
-package com.qa.pages;
+package com.desktop.application;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -34,6 +34,7 @@ public class CalculatorSquareRoot {
 		
 		String ActalResult = winiumDriver.findElement(By.id("CalculatorResults")).getAttribute("Name");
 		Assert.assertTrue((ActalResult.contains(ExpectedResult)));
+		winiumDriver.findElement(By.name("Close")).click();
 	}
 
 }
