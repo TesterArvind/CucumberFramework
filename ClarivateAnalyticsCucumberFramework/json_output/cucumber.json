@@ -4,79 +4,91 @@
     "elements": [
       {
         "line": 3,
-        "name": "Validate Square root of given number.",
+        "name": "Validate Google Search result for Clarivate Analytics Input Test",
         "description": "",
-        "id": "calculator-square-root-feature;validate-square-root-of-given-number.",
+        "id": "google-search-test;validate-google-search-result-for-clarivate-analytics-input-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3041058700,
+              "duration": 10438011900,
               "status": "passed"
             },
             "line": 5,
-            "name": "Open windows calculator app",
+            "name": "user opens browser",
             "match": {
-              "location": "CalciSteps.open_windows_calculator_app()"
+              "location": "GoogleSearchSteps.user_opens_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 10825846600,
+              "duration": 77855800,
               "status": "passed"
             },
             "line": 6,
-            "name": "Enter \"65575\"  value",
+            "name": "user is on google home page",
             "match": {
-              "arguments": [
-                {
-                  "val": "65575",
-                  "offset": 7
-                }
-              ],
-              "location": "CalciSteps.enter_value(String)"
+              "location": "GoogleSearchSteps.user_is_on_google_home_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 865018500,
+              "duration": 3301437200,
               "status": "passed"
             },
             "line": 7,
-            "name": "user clicks square root button",
+            "name": "user enters \"Clarivate Analytics\" search box",
             "match": {
-              "location": "CalciSteps.user_clicks_square_root_button()"
+              "arguments": [
+                {
+                  "val": "Clarivate Analytics",
+                  "offset": 13
+                }
+              ],
+              "location": "GoogleSearchSteps.user_enters_search_box(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 274961000,
+              "duration": 53642500,
               "status": "passed"
             },
             "line": 8,
-            "name": "validate result is \"Display is 256.076160546\"",
+            "name": "\"clarivate.com\" should be the first searched result",
             "match": {
               "arguments": [
                 {
-                  "val": "Display is 256.076160546",
-                  "offset": 20
+                  "val": "clarivate.com",
+                  "offset": 1
                 }
               ],
-              "location": "CalciSteps.validate_result_is(String)"
+              "location": "GoogleSearchSteps.should_be_the_first_search_result(String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4159666100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close browser",
+            "match": {
+              "location": "GoogleSearchSteps.close_browser()"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Calculator Square Root Feature",
+    "name": "Google Search Test",
     "description": "",
-    "id": "calculator-square-root-feature",
+    "id": "google-search-test",
     "keyword": "Feature",
-    "uri": "C:/Users/Admin/git/CucumberFramework/ClarivateAnalyticsCucumberFramework/src/main/java/com/qa/features/calci.feature"
+    "uri": "src/main/java/com/qa/features/search.feature"
   }
 ]

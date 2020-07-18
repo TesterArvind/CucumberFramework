@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.006885">
-<testcase classname="Calculator Square Root Feature" name="Validate Square root of given number." time="15.006885">
-<system-out><![CDATA[Given Open windows calculator app...........................................passed
-When Enter "65575"  value...................................................passed
-Then user clicks square root button.........................................passed
-Then validate result is "Display is 256.076160546"..........................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.030614">
+<testcase classname="Google Search Test" name="Validate Google Search result for Clarivate Analytics Input Test" time="18.030614">
+<system-out><![CDATA[Given user opens browser....................................................passed
+When user is on google home page............................................passed
+Then user enters "Clarivate Analytics" search box...........................passed
+Then "clarivate.com" should be the first searched result....................passed
+And close browser...........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

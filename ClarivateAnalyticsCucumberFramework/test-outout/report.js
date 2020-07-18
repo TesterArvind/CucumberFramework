@@ -1,77 +1,89 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Admin/git/CucumberFramework/ClarivateAnalyticsCucumberFramework/src/main/java/com/qa/features/calci.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/com/qa/features/search.feature");
 formatter.feature({
   "line": 1,
-  "name": "Calculator Square Root Feature",
+  "name": "Google Search Test",
   "description": "",
-  "id": "calculator-square-root-feature",
+  "id": "google-search-test",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Validate Square root of given number.",
+  "name": "Validate Google Search result for Clarivate Analytics Input Test",
   "description": "",
-  "id": "calculator-square-root-feature;validate-square-root-of-given-number.",
+  "id": "google-search-test;validate-google-search-result-for-clarivate-analytics-input-test",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "Open windows calculator app",
+  "name": "user opens browser",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "Enter \"65575\"  value",
+  "name": "user is on google home page",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "user clicks square root button",
+  "name": "user enters \"Clarivate Analytics\" search box",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "validate result is \"Display is 256.076160546\"",
+  "name": "\"clarivate.com\" should be the first searched result",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 9,
+  "name": "close browser",
+  "keyword": "And "
+});
 formatter.match({
-  "location": "CalciSteps.open_windows_calculator_app()"
+  "location": "GoogleSearchSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 3041058700,
+  "duration": 10438011900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "GoogleSearchSteps.user_is_on_google_home_page()"
+});
+formatter.result({
+  "duration": 77855800,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "65575",
-      "offset": 7
+      "val": "Clarivate Analytics",
+      "offset": 13
     }
   ],
-  "location": "CalciSteps.enter_value(String)"
+  "location": "GoogleSearchSteps.user_enters_search_box(String)"
 });
 formatter.result({
-  "duration": 10825846600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CalciSteps.user_clicks_square_root_button()"
-});
-formatter.result({
-  "duration": 865018500,
+  "duration": 3301437200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Display is 256.076160546",
-      "offset": 20
+      "val": "clarivate.com",
+      "offset": 1
     }
   ],
-  "location": "CalciSteps.validate_result_is(String)"
+  "location": "GoogleSearchSteps.should_be_the_first_search_result(String)"
 });
 formatter.result({
-  "duration": 274961000,
+  "duration": 53642500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "GoogleSearchSteps.close_browser()"
+});
+formatter.result({
+  "duration": 4159666100,
   "status": "passed"
 });
 });
