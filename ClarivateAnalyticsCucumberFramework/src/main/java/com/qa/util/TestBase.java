@@ -37,7 +37,7 @@ public class TestBase {
 	}
 
 	public static void initialization(){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");	
+		    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\resource\\drivers\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
@@ -48,18 +48,12 @@ public class TestBase {
 	}
 	
 	public static void initializationForWiniumDriver() throws IOException{
-		String command = "C:\\Users\\Admin\\Downloads\\Winium.Desktop.Driver\\Winium.Desktop.Driver.exe";
-		ProcessBuilder builder = new ProcessBuilder(command).inheritIO();
+		String winiumPath = System.getProperty("user.dir") + "\\resource\\drivers\\Winium.Desktop.Driver.exe";
+		ProcessBuilder builder = new ProcessBuilder(winiumPath).inheritIO();
 		builder.start();
-		
 		DesktopOptions option = new DesktopOptions();
 		option.setApplicationPath("c:\\Windows\\System32\\calc.exe");
 		winiumDriver = new WiniumDriver(new URL("http://localhost:9999"),option);	
-		
-//		winiumDriver.findElement(By.name("Six")).click();
-//		winiumDriver.findElement(By.name("Five")).click();
-//		winiumDriver.findElement(By.name("Five")).click();
-//		winiumDriver.findElement(By.name("Seven")).click();
-//		winiumDriver.findElement(By.name("Five")).click();
+
 	}	
 }
