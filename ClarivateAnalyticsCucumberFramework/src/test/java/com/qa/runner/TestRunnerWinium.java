@@ -11,7 +11,7 @@ package com.qa.runner;
 			format= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, 
 			monochrome = true, 
 			strict = true, 
-			dryRun = false 		
+			dryRun = false
 			)
 	 
 	public class TestRunnerWinium {
