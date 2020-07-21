@@ -38,7 +38,7 @@ formatter.match({
   "location": "CalciSteps.open_windows_calculator_application()"
 });
 formatter.result({
-  "duration": 3835190600,
+  "duration": 3132244000,
   "status": "passed"
 });
 formatter.match({
@@ -51,14 +51,14 @@ formatter.match({
   "location": "CalciSteps.enter_value(String)"
 });
 formatter.result({
-  "duration": 6397397900,
+  "duration": 5557129200,
   "status": "passed"
 });
 formatter.match({
   "location": "CalciSteps.user_clicks_square_root_button()"
 });
 formatter.result({
-  "duration": 906471300,
+  "duration": 747007400,
   "status": "passed"
 });
 formatter.match({
@@ -71,7 +71,7 @@ formatter.match({
   "location": "CalciSteps.validate_the_result(String)"
 });
 formatter.result({
-  "duration": 621728200,
+  "duration": 430785300,
   "status": "passed"
 });
 });

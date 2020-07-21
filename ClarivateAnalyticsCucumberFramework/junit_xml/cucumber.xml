@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.760788">
-<testcase classname="Calculator Square Root Feature" name="Validate Square root of given number." time="11.760788">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.867166">
+<testcase classname="Calculator Square Root Feature" name="Validate Square root of given number." time="9.867166">
 <system-out><![CDATA[Given Open windows calculator application...................................passed
 When Enter "65575"  value...................................................passed
 Then user clicks square root button.........................................passed

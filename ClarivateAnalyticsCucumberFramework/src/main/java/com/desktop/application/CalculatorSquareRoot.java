@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.winium.WiniumDriver;
 
+import com.qa.enums.CalculatorKeys;
+
 import junit.framework.Assert;
 
 public class CalculatorSquareRoot {
@@ -19,11 +21,10 @@ public class CalculatorSquareRoot {
 
 	public void enterDigitsInCalculator(String digit ){
 		
-		winiumDriver.findElement(By.name("Six")).click();
-		winiumDriver.findElement(By.name("Five")).click();
-		winiumDriver.findElement(By.name("Five")).click();
-		winiumDriver.findElement(By.name("Seven")).click();
-		winiumDriver.findElement(By.name("Five")).click();
+		for (char ch : String.valueOf(digit).toCharArray()) {
+			winiumDriver.findElement(By.id(String.valueOf(CalculatorKeys.valueOf("NUM" + ch)))).click();
+           
+        }
 	}
 
 	public void pressSquareRootButton(){
